@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Password Strength Beast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A gamified, high-fidelity password security interface where a digital creature evolves in real-time as your password grows stronger. Built to demonstrate how **micro-interactions** and **UI physics** can transform a mundane form into a premium digital experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* **Evolutionary UI:** Watch a tiny, jittery blob transform into a glowing, epic creature as entropy increases.
+* **Tactile Feedback:** The input field physically shakes and emits a low-frequency alert when **Weak** patterns are detected.
+* **Dynamic Glows:** Utilizes **glassmorphism** and neon "cosmic" accents that intensify as the beast reaches its final form.
+* **Fluid Motion:** Powered by **Framer Motion** for seamless layout transitions and state-based animations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+* **Framework:** React + Vite
+* **Styling:** Tailwind CSS (Dark Mode optimized)
+* **Animations:** Framer Motion
+* **Logic:** `zxcvbn` for high-precision entropy calculation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Vibe Coding
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project was built using **Vibe Coding** with the **Cursor AI Agent**. 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+By prioritizing high-level architecture and design intent over boilerplate, this experiment focuses on the synergy between **human orchestration** and **AI execution**. It is a "small but clever" project designed to push the boundaries of standard form UX.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone & Install:**
+    ```bash
+    npm install
+    ```
+
+2.  **Run Dev:**
+    ```bash
+    npm run dev
+    ```
+
+3.  **Interact:**
+    Start typing a password and watch the beast evolve. Be careful—it doesn't like simple strings.
